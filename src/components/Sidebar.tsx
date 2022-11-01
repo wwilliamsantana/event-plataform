@@ -1,4 +1,3 @@
-
 import { gql, useQuery } from "@apollo/client";
 import { Lesson } from "./Lesson";
 
@@ -45,7 +44,7 @@ export function Sidebar() {
           />
         )
       })}
-      
+
     </div>
 
    </aside>
