@@ -11,7 +11,6 @@ interface LessonProps{
   availableAt: Date
 }
 
-
 export function Lesson(props: LessonProps) {
   const {slug} = useParams<{slug: string}>()
 
