@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Footer } from "../components/Footer";
+import { LoadingAnimation } from "../components/LoadingAnimation";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
@@ -62,9 +63,10 @@ export function Subscribe(){
                 <button 
                 type="submit"
                 disabled={loading}
-                className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
+                className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50 flex items-center justify-center"
                 >
-                  Garantir minha vaga
+                  {loading ? <LoadingAnimation props={"w-4 h-4 text-white"}/> : " "}
+                  <span>Garantir minha vaga</span>
                 </button>
               </form>
 

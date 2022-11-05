@@ -12,9 +12,9 @@ interface VideoProps{
 
 export function Video(props: VideoProps) {
     const { data } = useGetLessonBySlugQuery({
-      // variables: {
-      //   slug: props.lessonSlug
-      // }
+      variables: {
+        slug: props.lessonSlug
+      }
     })
 
     if(!data || !data.lesson){
