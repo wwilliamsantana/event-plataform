@@ -20,7 +20,7 @@ export function Video(props: VideoProps) {
     if(!data || !data.lesson){
       return (
         <div className="flex-1 flex items-center justify-center">
-           <LoadingAnimation props={"text-purple-500 w-5 h-5"}/>
+           <LoadingAnimation classNames={"text-purple-500 w-5 h-5"}/>
            <p className="text-2xl ">
             Carregando....
           </p>

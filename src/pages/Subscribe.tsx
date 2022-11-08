@@ -63,7 +63,7 @@ export function Subscribe(){
                 disabled={loading}
                 className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50 flex items-center justify-center"
                 >
-                  {loading ? <LoadingAnimation props={"w-5 h-5 text-white"}/> : <span>Garantir minha vaga</span>}
+                  {loading ? <LoadingAnimation classNames={"w-5 h-5 text-white"}/> : <span>Garantir minha vaga</span>}
                   
                 </button>
               </form>
